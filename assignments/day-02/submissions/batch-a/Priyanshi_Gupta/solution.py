@@ -1,46 +1,40 @@
-#This program checks whether a number entered by the user is positive, negative, or zero. 
-num = int(input("Enter the number: "))
-if num > 0:
-    print("The number is positive")
-elif num < 0:
-    print("The number is negative")
+# QUESTION 1
+num=int(input("enter a number"))
+if num >0:
+    print( num," is positive")
+elif num<0:
+    print(num,"is negative")   
 else:
-    print("The number is zero")
-
-
-#This program checks whether a number entered by the user is even or odd.
-num = int(input("Enter the number: "))
-if num % 2 == 0:
-    print("The number is even")
+    print("number is zero")    
+# QUESTION 2
+num1 = int(input("enter a number"))  
+if num1%2==0:
+    print("number is even")
 else:
-    print("The number is odd") 
-
-#This program prints the numbers from 1 to 10 using a for loop.
-list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-for list in list:
-    print(list)
-
-
-
-
-def calcute_average(mark1 , mark2, mark3):
-    average = (mark1 + mark2 + mark3)/3
-    return average
-
-avg = calcute_average(90, 80, 70)
-print("The average of the marks is:", avg)
-
-#Function to print grade based on marks.
-
+    print("number is odd") 
+# QUESTION 3       
+list=[1,2,3,4,5,6,7,8,9,10] 
+for i in list:
+    print(i)   
+# QUESTION 4 
+mark1=float(input("enter mark1 marks"))
+mark2=float(input("enter mark2 marks"))
+mark3=float(input("enter mark3 marks"))
+def calculate_average(mark1,mark2,mark3):
+    return (mark1+ mark2+mark3)/3
+Average=round(calculate_average(mark1,mark2,mark3),2)
+print("average  of mark three subject is ",Average)
+ # QUESTION 5
 def grade_student(marks):
-    if marks >=90:
+    if marks>=90:
         return "A"
-    if marks >=80:
+    elif marks>=80:
         return "B"
-    if marks >=70:
+    elif marks>=70:
         return "C"
-    if marks >=60:
-        return "D"  
-    return "F"
-grade = grade_student(85)
-print("The grade of the student is:", grade)  
+    elif marks>=60:
+        return "D"
+    else:
+        return "F"
+
+print("Grade:", grade_student(85))
