@@ -19,7 +19,7 @@ print(courses)
 student_rec={"Name":"Priya",
              "Branch":"AIML",
              "Batch":"A Batch",
-             "Marks":90}
+             "Marks":9}
 # Printing in readable formate
 for item in student_rec:
     print(item,"   ",student_rec[item])
